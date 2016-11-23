@@ -22,6 +22,11 @@ func main() {
 	for _, d := range devices {
 		fmt.Println("\n", d.Name)
 		fmt.Println("\n", d.Description)
+
+		for _, a := range d.Addresses {
+			fmt.Println("IP::::::", a.IP)
+			fmt.Println("Netmask::::::", a.Netmask)
+		}
 		fmt.Println("-----------------------")
 	}
 }
